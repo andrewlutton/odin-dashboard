@@ -5,7 +5,6 @@
 .main-container {
     display: grid;
     grid-template-columns: 200px 1fr;
-    grid-template-rows: 200px 1fr;
 }
 
 .sidebar {
@@ -34,4 +33,21 @@
     grid-auto-flow: column;
     justify-content: start;
     gap: 20px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.acct-img.sm {
+    max-width: 50px;
+    width: auto;
+    height: auto;
+}
+
+.acct-img.lg {
+    max-width: 75px;
+    width: auto;
+    height: auto;
 }
