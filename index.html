@@ -12,24 +12,32 @@
 <body>
     <div class="main-container">
         <div class="header">
-            <div class="search-bar">
-                <img src="./img/search-icon.svg" alt="">
-                <input type="search">
+            <div class="header-top">
+                <div class="search-bar">
+                    <img src="./img/search-icon.svg" alt="">
+                    <input type="search">
+                </div>
+                <div class="acct-info">
+                    <img src="./img/notification-icon.svg" alt="">
+                    <img class="acct-img sm" src="./img/man1.png" alt="">
+                    <p>Morgan Oakley</p>
+                </div>
             </div>
-            <div class="acct-info">
-                <img src="./img/notification-icon.svg" alt="">
-                <img class="acct-img sm" src="./img/man1.png" alt="">
-                Morgan Oakley
-            </div>
-            <div class="greeting">
-                <img class="acct-img lg" src="./img/man1.png" alt="">
-                <p>Hi there,</p>
-                <p>Morgan Oakley (@morgan)</p>
-            </div>
-            <div class="actions">
-                <button class="btn">New</button>
-                <button class="btn">Upload</button>
-                <button class="btn">Share</button>
+            <div class="header-bottom">
+                <div class="greeting">
+                    <div class="greeting-img">
+                        <img class="acct-img lg" src="./img/man1.png" alt="">
+                    </div>
+                    <div class="greeting-txt">
+                        <p>Hi there,</p>
+                        <p>Morgan Oakley (@morgan)</p>
+                    </div>
+                </div>
+                <div class="actions">
+                    <button class="btn">New</button>
+                    <button class="btn">Upload</button>
+                    <button class="btn">Share</button>
+                </div>
             </div>
         </div>
         <div class="sidebar">
@@ -58,61 +66,79 @@
         <div class="dashboard-area">
             <div class="projects-area">
                 <h2>Your Projects</h2>
-                <div class="project card">
-                    <h3>Super Cool Project</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit atque accusantium corporis at aspernatur maiores modi nisi expedita rerum, sunt iste voluptate placeat accusamus dicta, quisquam, nesciunt ullam autem perspiciatis.</p>
-                    <img src="./img/add-favorites-icon.svg" alt="">
-                    <img src="./img/add-watchlist-icon.svg" alt="">
-                    <img src="./img/fork-icon.svg" alt="">
-                </div>
-                <div class="project card">
-                    <h3>Less Cool Project</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit atque accusantium corporis at aspernatur maiores modi nisi expedita rerum, sunt iste voluptate placeat accusamus dicta, quisquam, nesciunt ullam autem perspiciatis.</p>
-                    <img src="./img/add-favorites-icon.svg" alt="">
-                    <img src="./img/add-watchlist-icon.svg" alt="">
-                    <img src="./img/fork-icon.svg" alt="">
-                </div>
-                <div class="project card">
-                    <h3>Impossible App</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit atque accusantium corporis at aspernatur maiores modi nisi expedita rerum, sunt iste voluptate placeat accusamus dicta, quisquam, nesciunt ullam autem perspiciatis.</p>
-                    <img src="./img/add-favorites-icon.svg" alt="">
-                    <img src="./img/add-watchlist-icon.svg" alt="">
-                    <img src="./img/fork-icon.svg" alt="">
-                </div>
-                <div class="project card">
-                    <h3>Easy Peasy App</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit atque accusantium corporis at aspernatur maiores modi nisi expedita rerum, sunt iste voluptate placeat accusamus dicta, quisquam, nesciunt ullam autem perspiciatis.</p>
-                    <img src="./img/add-favorites-icon.svg" alt="">
-                    <img src="./img/add-watchlist-icon.svg" alt="">
-                    <img src="./img/fork-icon.svg" alt="">
-                </div>
-                <div class="project card">
-                    <h3>Ad Blocker</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit atque accusantium corporis at aspernatur maiores modi nisi expedita rerum, sunt iste voluptate placeat accusamus dicta, quisquam, nesciunt ullam autem perspiciatis.</p>
-                    <img src="./img/add-favorites-icon.svg" alt="">
-                    <img src="./img/add-watchlist-icon.svg" alt="">
-                    <img src="./img/fork-icon.svg" alt="">
-                </div>
-                <div class="project card">
-                    <h3>Money Maker</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit atque accusantium corporis at aspernatur maiores modi nisi expedita rerum, sunt iste voluptate placeat accusamus dicta, quisquam, nesciunt ullam autem perspiciatis.</p>
-                    <img src="./img/add-favorites-icon.svg" alt="">
-                    <img src="./img/add-watchlist-icon.svg" alt="">
-                    <img src="./img/fork-icon.svg" alt="">
+                <div class="project-cards">
+                    <div class="project card">
+                        <h3>Super Cool Project</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit atque accusantium
+                            corporis at aspernatur maiores modi nisi expedita rerum, sunt iste voluptate placeat
+                            accusamus dicta, quisquam, nesciunt ullam autem perspiciatis.</p>
+                        <img src="./img/add-favorites-icon.svg" alt="">
+                        <img src="./img/add-watchlist-icon.svg" alt="">
+                        <img src="./img/fork-icon.svg" alt="">
+                    </div>
+                    <div class="project card">
+                        <h3>Less Cool Project</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit atque accusantium
+                            corporis at aspernatur maiores modi nisi expedita rerum, sunt iste voluptate placeat
+                            accusamus dicta, quisquam, nesciunt ullam autem perspiciatis.</p>
+                        <img src="./img/add-favorites-icon.svg" alt="">
+                        <img src="./img/add-watchlist-icon.svg" alt="">
+                        <img src="./img/fork-icon.svg" alt="">
+                    </div>
+                    <div class="project card">
+                        <h3>Impossible App</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit atque accusantium
+                            corporis at aspernatur maiores modi nisi expedita rerum, sunt iste voluptate placeat
+                            accusamus dicta, quisquam, nesciunt ullam autem perspiciatis.</p>
+                        <img src="./img/add-favorites-icon.svg" alt="">
+                        <img src="./img/add-watchlist-icon.svg" alt="">
+                        <img src="./img/fork-icon.svg" alt="">
+                    </div>
+                    <div class="project card">
+                        <h3>Easy Peasy App</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit atque accusantium
+                            corporis at aspernatur maiores modi nisi expedita rerum, sunt iste voluptate placeat
+                            accusamus dicta, quisquam, nesciunt ullam autem perspiciatis.</p>
+                        <img src="./img/add-favorites-icon.svg" alt="">
+                        <img src="./img/add-watchlist-icon.svg" alt="">
+                        <img src="./img/fork-icon.svg" alt="">
+                    </div>
+                    <div class="project card">
+                        <h3>Ad Blocker</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit atque accusantium
+                            corporis at aspernatur maiores modi nisi expedita rerum, sunt iste voluptate placeat
+                            accusamus dicta, quisquam, nesciunt ullam autem perspiciatis.</p>
+                        <img src="./img/add-favorites-icon.svg" alt="">
+                        <img src="./img/add-watchlist-icon.svg" alt="">
+                        <img src="./img/fork-icon.svg" alt="">
+                    </div>
+                    <div class="project card">
+                        <h3>Money Maker</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit atque accusantium
+                            corporis at aspernatur maiores modi nisi expedita rerum, sunt iste voluptate placeat
+                            accusamus dicta, quisquam, nesciunt ullam autem perspiciatis.</p>
+                        <img src="./img/add-favorites-icon.svg" alt="">
+                        <img src="./img/add-watchlist-icon.svg" alt="">
+                        <img src="./img/fork-icon.svg" alt="">
+                    </div>
                 </div>
             </div>
             <div class="announcements-area">
                 <h2>Announcements</h2>
                 <div class="announcements card">
                     <h3>Site Maintenance</h3>
-                    <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ec. Donec hendrerit sodales congue...</p>
+                    <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ec. Donec hendrerit sodales
+                        congue...</p>
                     <h3>Community Share Day</h3>
-                    <p>Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accumsan porttitor...</p>
+                    <p>Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accumsan porttitor...
+                    </p>
                     <h3>Update Privacy Policy</h3>
-                    <p>Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fingilla sagittis seem in mattis...</p>
+                    <p>Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fingilla
+                        sagittis seem in mattis...</p>
                 </div>
             </div>
             <div class="trending-area">
+                <h2>Trending</h2>
                 <div class="trending card">
                     <div class="user">
                         <img class="acct-img sm" src="./img/woman1.png" alt="">

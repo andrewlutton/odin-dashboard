@@ -4,7 +4,7 @@
 
 .main-container {
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: min-content 1fr;
 }
 
 .sidebar {
@@ -35,9 +35,36 @@
     gap: 20px;
 }
 
-.header {
+.header-top {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr max-content;
+}
+
+.acct-info {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.greeting {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .acct-img.sm {
@@ -50,4 +77,30 @@
     max-width: 75px;
     width: auto;
     height: auto;
+}
+
+.dashboard-area {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    grid-template-areas:
+        "projects announcements"
+        "projects trending";
+    grid-template-rows: min-content 1fr;
+}
+
+.projects-area {
+    grid-area: projects;
+}
+
+.announcements-area {
+    grid-area: announcements;
+}
+
+.trending-area {
+    grid-area: trending;
+}
+
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
