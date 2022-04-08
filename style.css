@@ -232,3 +232,17 @@ h3 {
 .usr-title {
     color: #686868;
 }
+
+.announcement h3 {
+    font-size: .9rem;
+}
+
+.announcement p {
+    font-size: .8rem;
+    color: #686868;
+}
+
+hr {
+    margin: 1rem 0;
+    width: 100%;
+}
