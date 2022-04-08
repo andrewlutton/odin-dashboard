@@ -7,7 +7,7 @@
 body {
     font-family: "Roboto", sans-serif;
     display: grid;
-    grid-template-columns: min-content 1fr;
+    grid-template-columns: 18.75rem 1fr;
     grid-template-rows: min-content 100%;
     margin: 0;
     min-height: 100vh;
@@ -19,11 +19,14 @@ body {
     background-color: #1A92D4;
     color: #FFFFFF;
     z-index: 2;
+    display: grid;
+    grid-template-rows: min-content min-content min-content;
+    gap: 2rem;
 }
 
 .sidebar ul {
-    padding: 0;
     list-style-type: none;
+    font-size: 1.2rem;
 }
 
 .sidebar-title {
@@ -32,6 +35,21 @@ body {
     grid-auto-flow: column;
     justify-content: start;
     gap: 20px;
+    padding-top: 1.25rem;
+    padding-left: 1rem;
+}
+
+.sidebar-title img {
+    height: 3rem;
+    width: auto;
+}
+
+h1, h3 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 2rem;
 }
 
 .sidebar li {
@@ -39,13 +57,15 @@ body {
     align-items: center;
     grid-auto-flow: column;
     justify-content: start;
-    gap: 20px;
+    gap: 1.5rem;
+    margin: 1rem 0;
+    font-weight: 600;
 }
 
-/* .sidebar img {
+ul img {
     height: 100%;
     width: auto;
-} */
+}
 
 .header {
     padding: 20px;
@@ -202,9 +222,6 @@ body {
     flex-direction: column;
 }
 
-h3 {
-    margin: 0;
-}
 .trending {
     display: grid;
     gap: 1rem;
