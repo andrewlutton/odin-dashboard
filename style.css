@@ -129,14 +129,14 @@ body {
 }
 
 .acct-img.sm {
-    max-width: 50px;
-    width: auto;
+    /* max-width: 50px; */
+    width: 3rem;
     height: auto;
 }
 
 .acct-img.lg {
-    max-width: 75px;
-    width: auto;
+    /* max-width: 75px; */
+    width: 4.2rem;
     height: auto;
 }
 
@@ -178,10 +178,57 @@ body {
     box-shadow: 5px 5px 8px -4px #D1D3D3;
 }
 
+.card-icons {
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+    margin-top: auto;
+    justify-self: end;
+}
+
+.card-icons img {
+    height: 1.5rem;
+    width: auto;
+}
+
+.card p {
+    color: #686868;
+    margin-top: .2rem;
+}
+
 .project.card {
     border-left: .5rem solid #EFB429;
+    display: flex;
+    flex-direction: column;
 }
 
 h3 {
     margin: 0;
+}
+.trending {
+    display: grid;
+    gap: 1rem;
+}
+.user {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-areas:
+        "icon usr"
+        "icon title";
+    justify-items: start;
+    align-items: center;
+    column-gap: 1.2rem;
+}
+
+.user img {
+    grid-area: icon;
+}
+
+.usr-handle {
+    font-weight: 600;
+    font-size: .8rem;
+}
+
+.usr-title {
+    color: #686868;
 }
