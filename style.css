@@ -8,7 +8,7 @@ body {
     font-family: "Roboto", sans-serif;
     display: grid;
     grid-template-columns: 18.75rem 1fr;
-    grid-template-rows: min-content 100%;
+    grid-template-rows: min-content 1fr;
     margin: 0;
     min-height: 100vh;
 }
@@ -149,13 +149,11 @@ ul img {
 }
 
 .acct-img.sm {
-    /* max-width: 50px; */
     width: 3rem;
     height: auto;
 }
 
 .acct-img.lg {
-    /* max-width: 75px; */
     width: 4.2rem;
     height: auto;
 }
@@ -175,6 +173,8 @@ ul img {
 
 .projects-area {
     grid-area: projects;
+    display: flex;
+    flex-direction: column;
 }
 
 .announcements-area {
@@ -183,6 +183,18 @@ ul img {
 
 .trending-area {
     grid-area: trending;
+}
+
+.attribution {
+    justify-self: end;
+    align-self: center;
+    margin-top: auto;
+    padding: 1rem 0;
+}
+
+.attribution a, .attribution {
+    font-size: .7rem;
+    color: black;
 }
 
 .project-cards {
